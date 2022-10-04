@@ -1,6 +1,7 @@
 package com.example.paybook.common.error;
 
 
+import com.example.paybook.financialledger.application.NotFoundFinancialLedgerException;
 import com.example.paybook.jwt.NotFoundTokenException;
 import com.example.paybook.member.application.EmailDuplicationException;
 import com.example.paybook.member.application.MemberNotFoundException;
@@ -32,6 +33,12 @@ public class ExceptionHandlerController {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     protected ErrorResponse handleTokenNotFoundException(NotFoundTokenException e) {
         final ErrorCode errorCode = ErrorCode.TOKEN_NOT_FOUND;
+        return ErrorResponse.builder().message(errorCode.getValue()).build();
+    }
+    @ExceptionHandler(value = {NotFoundFinancialLedgerException.class})
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    protected ErrorResponse handleFinancialLedgerNotFoundException(NotFoundFinancialLedgerException e) {
+        final ErrorCode errorCode = ErrorCode.FINANCIAL_LEDGER_NOT_FOUND;
         return ErrorResponse.builder().message(errorCode.getValue()).build();
     }
 

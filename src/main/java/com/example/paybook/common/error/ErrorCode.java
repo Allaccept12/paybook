@@ -12,6 +12,7 @@ public enum ErrorCode {
     EMAIL_DUPLICATION("중복된 이메일 입니다."),
     PASSWORD_WRONG("패스워드가 올바르지 않습니다."),
     TOKEN_NOT_FOUND("토큰이 없거나 이미 로그아웃 하셨습니다."),
+    FINANCIAL_LEDGER_NOT_FOUND("가계부가 존재 하지 않습니다."),
     INPUT_VALUE_INVALID("입력값이 올바르지 않습니다.");
 
 

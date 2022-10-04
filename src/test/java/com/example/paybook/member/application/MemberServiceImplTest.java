@@ -4,12 +4,9 @@ import com.example.paybook.common.model.ResponseDto;
 import com.example.paybook.jwt.TokenProvider;
 import com.example.paybook.member.domain.*;
 import com.example.paybook.member.dto.LoginReqDto;
-import com.example.paybook.member.dto.LoginResDto;
 import com.example.paybook.member.dto.SignUpReqDto;
 import com.example.paybook.member.dto.TokenDto;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -17,16 +14,13 @@ import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
-import org.springframework.security.test.context.support.WithMockUser;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
 
 @MockitoSettings(strictness = Strictness.WARN)

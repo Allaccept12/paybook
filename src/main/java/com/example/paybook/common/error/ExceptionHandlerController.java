@@ -6,8 +6,6 @@ import com.example.paybook.jwt.NotFoundTokenException;
 import com.example.paybook.member.application.EmailDuplicationException;
 import com.example.paybook.member.application.MemberNotFoundException;
 import com.example.paybook.member.application.WrongPasswordException;
-
-
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

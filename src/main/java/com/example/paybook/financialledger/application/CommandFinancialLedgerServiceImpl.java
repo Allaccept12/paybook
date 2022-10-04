@@ -8,7 +8,6 @@ import com.example.paybook.financialledger.domain.Money;
 import com.example.paybook.financialledger.dto.CreateFinancialLedgerReqDto;
 import com.example.paybook.financialledger.dto.EditFinancialLedgerReqDto;
 import com.example.paybook.member.domain.Member;
-import com.example.paybook.member.domain.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

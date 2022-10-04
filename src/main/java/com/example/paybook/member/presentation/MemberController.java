@@ -7,7 +7,6 @@ import com.example.paybook.member.domain.UserDetailsImpl;
 import com.example.paybook.member.dto.LoginReqDto;
 import com.example.paybook.member.dto.SignUpReqDto;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -8,7 +8,6 @@ import com.example.paybook.financialledger.domain.Money;
 import com.example.paybook.member.domain.Email;
 import com.example.paybook.member.domain.Member;
 import com.example.paybook.member.domain.Password;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -19,7 +18,7 @@ import org.mockito.quality.Strictness;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.BDDMockito.given;
 
